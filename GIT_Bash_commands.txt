@@ -153,4 +153,8 @@ git clone --bare hello hello.git
 git remote add shared ../hello.git
 --чтобы отправить в общий репо данные о новых коммитах, нужно выполнить команду
 git push shared master --в данном случае передаем данные в ветвь master репозитория shared (путь к которому указали ранее)
---! перед каждым push-ем делаем pull
+--! перед push-ем не забываем делать pull
+--если вдруг понадобилось объединить два проекта, которые какое-то время назад начали жить независимо 
+--(понадобилось после внесения отдельных изменений одного репо на GitHub и локально, pull ругался на конфликт несвязанных историй)
+git --work-tree="." pull --allow-unrelated-histories https://github.com/Vndanilchenko/GIT-BASH-COMMANDS
+
