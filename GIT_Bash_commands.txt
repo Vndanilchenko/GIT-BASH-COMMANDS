@@ -8,6 +8,13 @@
 git config --global user.name "Vndanilchenko"
 git config --global user.email "vndanilchenko@gmail.com"
 
+----сделаем некоторые дополнительные настройки
+----уберем ошибку о наличии в файле разрыва строки
+----git config --global core.safecrlf true
+------git config --global core.safecrlf false
+----git config --global core.autocrlf true
+----установка отображения unicode
+----git config --global core.quotepath off
 
 --создам директорию NETOLOGY, в которой буду хранить данные по процессу обучения
 mkdir NETOLOGY
